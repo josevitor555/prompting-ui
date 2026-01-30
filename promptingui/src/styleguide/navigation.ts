@@ -16,6 +16,12 @@ export const navigation: NavSection[] = [
         ]
     },
     {
+        title: "Pages",
+        items: [
+            { name: "Portfolio", href: "/portfolio" },
+        ]
+    },
+    {
         title: "Components",
         items: [
             { name: "Accordion", href: "/styleguide/components/accordion" },

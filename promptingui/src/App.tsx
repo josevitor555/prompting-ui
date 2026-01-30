@@ -10,6 +10,7 @@ import AccordionShowcase from './styleguide/AccordionShowcase'
 import CardShowcase from './styleguide/CardShowcase'
 import ButtonShowcase from './styleguide/ButtonShowcase'
 import InputShowcase from './styleguide/InputShowcase'
+import PortfolioPage from './pages/PortfolioPage'
 
 const App = () => {
   const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
@@ -50,6 +51,10 @@ const App = () => {
 
   if (currentPath === '#/styleguide/components/input') {
     return <InputShowcase />;
+  }
+
+  if (currentPath === '#/portfolio' || currentPath === '#/portfolio/') {
+    return <PortfolioPage />;
   }
 
   return (
