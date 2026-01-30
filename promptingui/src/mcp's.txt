@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "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"
+      }
+    },
+    "Framelink Figma MCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-developer-mcp",
+        "--figma-api-key=FIGMA_API_ACCESS_TOKEN",
+        "--stdio"
+      ]
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ]
+    }
+  }
+}
