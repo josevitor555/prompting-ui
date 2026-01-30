@@ -18,9 +18,12 @@ export const navigation: NavSection[] = [
     {
         title: "Components",
         items: [
-            { name: "Sidebar", href: "/styleguide/components/sidebar" },
+            { name: "Accordion", href: "/styleguide/components/accordion" },
+            { name: "Card", href: "/styleguide/components/card" },
             { name: "Table", href: "/styleguide/components/table" },
             { name: "Bar Chart", href: "/styleguide/components/bar-chart" },
+            { name: "Button", href: "/styleguide/components/button" },
+            { name: "Input", href: "/styleguide/components/input" },
         ]
     }
 ];

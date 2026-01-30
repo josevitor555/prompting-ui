@@ -1,11 +1,15 @@
 // Import styles
 import './App.css'
 import { useEffect, useState } from 'react'
+
+// Components
 import StyleguidePage from './styleguide/StyleguidePage'
 import TableShowcase from './styleguide/TableShowcase'
 import BarChartShowcase from './styleguide/BarChartShowcase'
-import SidebarShowcase from './styleguide/SidebarShowcase'
-
+import AccordionShowcase from './styleguide/AccordionShowcase'
+import CardShowcase from './styleguide/CardShowcase'
+import ButtonShowcase from './styleguide/ButtonShowcase'
+import InputShowcase from './styleguide/InputShowcase'
 
 const App = () => {
   const [currentPath, setCurrentPath] = useState(window.location.hash || '#/');
@@ -32,15 +36,27 @@ const App = () => {
     return <BarChartShowcase />;
   }
 
-  if (currentPath === '#/styleguide/components/sidebar') {
-    return <SidebarShowcase />;
+  if (currentPath === '#/styleguide/components/accordion') {
+    return <AccordionShowcase />;
+  }
+
+  if (currentPath === '#/styleguide/components/card') {
+    return <CardShowcase />;
+  }
+
+  if (currentPath === '#/styleguide/components/button') {
+    return <ButtonShowcase />;
+  }
+
+  if (currentPath === '#/styleguide/components/input') {
+    return <InputShowcase />;
   }
 
   return (
     <div className="app min-h-screen flex items-center justify-center">
       <div className="text-center space-y-6">
         <h1 className='text-5xl font-bold'>
-          Crypto Design System
+          Design System Example
         </h1>
         <p className="text-xl text-muted-foreground">
           Modern, bold, high-contrast design system
